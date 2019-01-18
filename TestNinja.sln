@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.0.0
-MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNinja", "TestNinja/TestNinja.csproj", "{7328740E-4B78-464F-8352-65D887F2145F}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNinja", "TestNinja\TestNinja.csproj", "{7328740E-4B78-464F-8352-65D887F2145F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNinja.Tests", "TestNinja.Tests\TestNinja.Tests.csproj", "{65F422EB-E075-469A-B33A-A5ED93E983EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{7328740E-4B78-464F-8352-65D887F2145F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7328740E-4B78-464F-8352-65D887F2145F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7328740E-4B78-464F-8352-65D887F2145F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65F422EB-E075-469A-B33A-A5ED93E983EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65F422EB-E075-469A-B33A-A5ED93E983EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65F422EB-E075-469A-B33A-A5ED93E983EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65F422EB-E075-469A-B33A-A5ED93E983EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB11F4EA-B3BB-4CF8-9EC0-0ED0BEA92A9E}
 	EndGlobalSection
 EndGlobal
