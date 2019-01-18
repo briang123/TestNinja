@@ -1,10 +1,7 @@
-﻿using Microsoft.Win32;
-using NUnit.Framework;
-using System;
-using System.Runtime.Remoting;
+﻿using NUnit.Framework;
 using TestNinja.Fundamentals;
 
-namespace TestNinja.Tests
+namespace TestNinja.UnitTests
 {
     [TestFixture]
     public class ReservationTests

@@ -9,8 +9,8 @@
     <ProjectGuid>{65F422EB-E075-469A-B33A-A5ED93E983EE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestNinja.Tests</RootNamespace>
-    <AssemblyName>TestNinja.Tests</AssemblyName>
+    <RootNamespace>TestNinja.UnitTests</RootNamespace>
+    <AssemblyName>TestNinja.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
