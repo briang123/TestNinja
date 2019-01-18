@@ -1,25 +1,26 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Microsoft.Win32;
+﻿using Microsoft.Win32;
+using NUnit.Framework;
 using System;
+using System.Runtime.Remoting;
 using TestNinja.Fundamentals;
 
 namespace TestNinja.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class ReservationTests
     {
-        [TestMethod]
+        [Test]
         public void CanBeCancelledBy_AdminCancelling_ReturnsTrue()
         {
             var reservation = new Reservation();
 
             var result = reservation.CanBeCancelledBy(new User { IsAdmin = true });
 
-            Assert.IsTrue(result);
+            Assert.That(result, Is.True);
 
         }
 
-        [TestMethod]
+        [Test]
         public void CanBeCancelledBy_SameUserCancelling_ReturnsTrue()
         {
             var user = new User();
@@ -27,18 +28,18 @@ namespace TestNinja.Tests
 
             var result = reservation.CanBeCancelledBy(user);
 
-            Assert.IsTrue(result);
+            Assert.That(result, Is.True);
 
         }
 
-        [TestMethod]
+        [Test]
         public void CanBeCancelledBy_AnotherUserCancelling_ReturnsFalse()
         {
             var reservation = new Reservation { MadeBy = new User() };
 
             var result = reservation.CanBeCancelledBy(new User());
 
-            Assert.IsFalse(result);
+            Assert.That(result, Is.False);
         }
 
 
