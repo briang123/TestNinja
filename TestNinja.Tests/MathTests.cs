@@ -12,7 +12,6 @@ namespace TestNinja.UnitTests
     [TestFixture]
     public class MathTests
     {
-
         private Math _math;
 
         [SetUp]
@@ -39,6 +38,5 @@ namespace TestNinja.UnitTests
 
             Assert.That(result, Is.EqualTo(expectedResult));
         }
-
     }
 }
