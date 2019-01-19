@@ -1,11 +1,5 @@
 ﻿using NUnit.Framework;
-using NUnit.Framework.Internal;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Math = TestNinja.Fundamentals.Math;
+using TestNinja.Fundamentals;
 
 namespace TestNinja.UnitTests
 {
@@ -37,6 +31,14 @@ namespace TestNinja.UnitTests
             var result = _math.Max(a, b);
 
             Assert.That(result, Is.EqualTo(expectedResult));
+        }
+
+        [Test]
+        public void GetOddNumbers_LimitIsGreaterThan0_ReturnOddNumbersUpToLimit()
+        {
+            var result = _math.GetOddNumbers(5);
+
+            Assert.That(result, Is.EquivalentTo(new[] { 1, 3, 5 }));
         }
     }
 }
