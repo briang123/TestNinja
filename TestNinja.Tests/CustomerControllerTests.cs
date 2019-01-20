@@ -4,7 +4,7 @@ using TestNinja.Fundamentals;
 namespace TestNinja.UnitTests
 {
     [TestFixture]
-    class CustomerControllerTests
+    public class CustomerControllerTests
     {
         private CustomerController _controller;
 

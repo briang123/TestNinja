@@ -4,7 +4,7 @@ using TestNinja.Fundamentals;
 namespace TestNinja.UnitTests
 {
     [TestFixture]
-    class FizzBuzzTests
+    public class FizzBuzzTests
     {
         [Test]
         [TestCase(1, "1")]

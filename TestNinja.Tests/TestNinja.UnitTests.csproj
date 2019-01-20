@@ -61,6 +61,7 @@
     <Compile Include="Reservation_CanBeCancelledByTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DemeritPointsCalculatorTests.cs" />
+    <Compile Include="StackTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
