@@ -4,7 +4,7 @@ using TestNinja.Fundamentals;
 namespace TestNinja.UnitTests.Fundamentals
 {
     [TestFixture]
-    public class HtmlFormatterTests
+    internal class HtmlFormatterTests
     {
         [Test]
         public void FormatAsBold_WhenCalled_ShouldEncloseStringWithStrongElement()

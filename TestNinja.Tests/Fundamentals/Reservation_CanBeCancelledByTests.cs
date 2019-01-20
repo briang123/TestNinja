@@ -4,7 +4,7 @@ using TestNinja.Fundamentals;
 namespace TestNinja.UnitTests.Fundamentals
 {
     [TestFixture]
-    public class ReservationCanBeCancelledByTests
+    internal class ReservationCanBeCancelledByTests
     {
         [Test]
         public void CanBeCancelledBy_AdminCancelling_ReturnsTrue()

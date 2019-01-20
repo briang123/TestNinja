@@ -5,7 +5,7 @@ using TestNinja.Fundamentals;
 namespace TestNinja.UnitTests.Fundamentals
 {
     [TestFixture]
-    public class ErrorLoggerTests
+    internal class ErrorLoggerTests
     {
         private ErrorLogger _logger;
 

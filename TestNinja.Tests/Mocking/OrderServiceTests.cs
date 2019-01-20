@@ -5,7 +5,7 @@ using TestNinja.Mocking;
 namespace TestNinja.UnitTests.Mocking
 {
     [TestFixture]
-    public class OrderServiceTests
+    internal class OrderServiceTests
     {
         private Mock<IStorage> _storage;
 

@@ -6,7 +6,7 @@ using TestNinja.Mocking;
 namespace TestNinja.UnitTests.Mocking
 {
     [TestFixture]
-    public class VideoServiceTests
+    internal class VideoServiceTests
     {
         private VideoService _videoService;
         private Mock<IFileReader> _fileReader;

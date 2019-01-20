@@ -6,7 +6,7 @@ using Assert = NUnit.Framework.Assert;
 namespace TestNinja.UnitTests.Fundamentals
 {
     [TestFixture]
-    public class DemeritPointsCalculatorTests
+    internal class DemeritPointsCalculatorTests
     {
         private DemeritPointsCalculator _calculator;
 

@@ -4,7 +4,7 @@ using TestNinja.Fundamentals;
 namespace TestNinja.UnitTests.Fundamentals
 {
     [TestFixture]
-    public class StackTests
+    internal class StackTests
     {
         private Stack<string> _stack;
 
