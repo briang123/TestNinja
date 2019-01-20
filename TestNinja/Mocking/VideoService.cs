@@ -1,8 +1,5 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.IO;
 using System.Linq;
 
 namespace TestNinja.Mocking
@@ -22,20 +19,16 @@ namespace TestNinja.Mocking
         {
             var str = _fileReader.Read("video.txt");
             var video = JsonConvert.DeserializeObject<Video>(str);
-            if (video == null)
-                return "Error parsing the video.";
-            return video.Title;
+
+            return video == null ? "Error parsing the video." : video.Title;
         }
 
         public string GetUnprocessedVideosAsCsv()
         {
-            var videoIds = new List<int>();
-
             var videos = _repository.GetUnprocessedVideos();
-            foreach (var v in videos)
-                videoIds.Add(v.Id);
+            var videoIds = videos.Select(v => v.Id).ToList();
 
-            return String.Join(",", videoIds);
+            return string.Join(",", videoIds);
         }
     }
 
