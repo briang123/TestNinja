@@ -11,7 +11,6 @@ namespace TestNinja.UnitTests.Mocking
     internal class BookingHelper_OverlappingBookingsExistTests
     {
         private Booking _existingBooking;
-        private Booking _cancelledBooking;
         private Mock<IBookingRepository> _repository;
 
         [SetUp]
@@ -22,11 +21,6 @@ namespace TestNinja.UnitTests.Mocking
                 ArrivalDate = ArriveOn(2019, 2, 15),
                 DepartureDate = DepartOn(2019, 2, 20),
                 Reference = "a"
-            };
-
-            _cancelledBooking = new Booking
-            {
-                Status = "Cancelled"
             };
 
             _repository = new Mock<IBookingRepository>();
