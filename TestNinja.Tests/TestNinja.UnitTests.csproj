@@ -80,6 +80,7 @@
     <Compile Include="Fundamentals\MathTests.cs" />
     <Compile Include="Mocking\BookingHelperTests.cs" />
     <Compile Include="Mocking\EmployeeControllerTests.cs" />
+    <Compile Include="Mocking\HouseKeeperServiceTests.cs" />
     <Compile Include="Mocking\InstallHelperTests.cs" />
     <Compile Include="Mocking\OrderServiceTests.cs" />
     <Compile Include="Mocking\ProductTests.cs" />
